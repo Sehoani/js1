@@ -6,37 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
 
-    
-    <div class="card">
-        <h1>ingrese el valor</h1>
 
-        <input class="cantidad" type="number">
-        <input class="color" type="texto">
+    <div class="card">
+        <img src="assets/img/macbook-459196_1280.jpg">
+        <h4>LAPTOP</h4>
+
+        <input class="cantidad" type="number" placeholder="Cantidad">
+        <input class="color"  placeholder="Color" >
         <span>Precio unitario: $400.000</span>
 
 
-       
-        <button onclick="
-        input = document.querySelector('.cantidad')
-        input1 = document.querySelector('.color')
-        parrafo = document.querySelector('.multiplicacion1')
-        parrafo1 = document.querySelector('.resultadoColor')
-        parrafo2 = document.querySelector('.cantidad2')
-        card2 = document.querySelector('.resultado')
-        multiplicacion = Number(input.value)
-        estilo = String(input1.value)
-        unitario = 400000
-        resultado = multiplicacion * 400000
-        parrafo.innerHTML = 'Total: $' + resultado
-        parrafo1.innerHTML = 'Color: ' + estilo
-        parrafo2.innerHTML =  'Cantidad: ' + multiplicacion
-        card2.style.border = 'solid 2px red'
-        ">
+        <button class="boton" onclick="
+            let input = document.querySelector('.cantidad')
+            let input1 = document.querySelector('.color')
+            let parrafo = document.querySelector('.multiplicacion1')
+            let parrafo1 = document.querySelector('.resultadoColor')
+            let parrafo2 = document.querySelector('.cantidad2')
+            let card2 = document.querySelector('.resultado')
+            let multiplicacion = Number(input.value)
+            let estilo = String(input1.value)
+            let resultado = multiplicacion * 400000
+
+            parrafo.innerHTML = 'Total: $ ' + resultado
+            parrafo1.innerHTML = 'Color: ' + estilo
+            parrafo2.innerHTML = 'Cantidad: ' + multiplicacion
+
+
+">
             Haz click aqui para saber
         </button>
 
@@ -44,10 +49,10 @@
     <div class="resultado">
         <p class="multiplicacion1"></p>
         <p class="cantidad2"></p>
-        <p class="resultadoColor"></p>
+        <p class="resultadoColor" ></p>
     </div>
 
-
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
